@@ -3,14 +3,12 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 export class NavBar extends Component {
-   static propTypes = {
 
-   }
 
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>

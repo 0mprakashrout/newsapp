@@ -8,10 +8,13 @@ export class NewsItem extends Component {
     return (
       <div>
         <div className="card">
+      
           <img src={!imageUrl?"https://techcrunch.com/wp-content/uploads/2023/03/faraday-future-ff91.jpg?resize=1200,674":imageUrl} className="card-img-top" alt="..." />
           <div className="card-body">
-          <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left:'80%',zindex:1}}>{source}
+            <div style={{float:"right"}}>
+          <span className=" badge rounded-pill bg-danger" >{source}
             </span>
+            </div>
             <h5 className="card-title">{title}
             </h5>
             <p className="card-text">{description}</p>
